@@ -1,0 +1,267 @@
+body {
+  background-color: #e7e5e5;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.title {
+  padding: 25px 20px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.orden {
+  padding: 25px 50px;
+  border-radius: 20px;
+  border: 0;
+  color: hsl(0, 0%, 0%);
+  background-color: #e7e5e5;
+  box-shadow: rgb(120, 121, 121) 0px 7px 29px 0px;
+  letter-spacing: 1.5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 23px;
+  transition: all 0.5s ease;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.plano {
+  position: relative; /* Agregamos posicionamiento relativo al contenedor */
+}
+
+/* Imágenes de focos, cámaras y ventilador */
+.foco-apagado-patio1 {
+  position: absolute;
+  top: 150px;
+  right: 250px;
+  height: 50px;
+}
+
+.foco-encendido-patio1 {
+  position: absolute;
+  top: 150px;
+  right: 250px;
+  height: 50px;
+  display: none;
+}
+
+.foco-apagado-patio2 {
+  position: absolute;
+  top: 60px;
+  right: 350px;
+  height: 50px;
+}
+
+.foco-encendido-patio2 {
+  position: absolute;
+  top: 60px;
+  right: 350px;
+  height: 50px;
+  display: none;
+}
+
+.foco-apagado-patio3 {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  height: 50px;
+}
+
+.foco-encendido-patio3 {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  height: 50px;
+  display: none;
+}
+
+
+.foco-apagado-comedor {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  height: 50px;
+}
+
+.foco-encendido-comedor {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  height: 50px;
+  display: none;
+}
+
+.foco-apagado-sala1 {
+  position: absolute;
+  top: 470px;
+  right: 360px;
+  height: 50px;
+}
+
+.foco-encendido-sala1 {
+  position: absolute;
+  top: 470px;
+  right: 360px;
+  height: 50px;
+  display: none;
+}
+
+.ventilador-encendido {
+  position: absolute;
+  bottom: 290px;
+  left: 470px;
+  height: 80px;
+  display: none;
+}
+
+.ventilador-apagado {
+  position: absolute;
+  bottom: 290px;
+  left: 470px;
+  height: 80px;
+}
+
+.camara-apagada1 {
+  position: absolute;
+  bottom: 340px;
+  left: 100px;
+  height: 60px;
+}
+.camara-encendida1 {
+  position: absolute;
+  bottom: 340px;
+  left: 100px;
+  height: 60px;
+  display: none;
+}
+
+.camara-apagada2 {
+  position: absolute;
+  top: 120px;
+  right: 335px;
+  height: 60px;
+}
+
+.camara-encendida2 {
+  position: absolute;
+  top: 120px;
+  right: 335px;
+  height: 60px;
+  display: none;
+}
+
+
+.camara-apagada3 {
+  position: absolute;
+  bottom: 130px;
+  right: 380px;
+  height: 60px;
+}
+
+.camara-encendida3 {
+  position: absolute;
+  bottom: 130px;
+  right: 380px;
+  height: 60px;
+  display: none;
+}
+
+
+
+.cortina-cerrada1 {
+  position: absolute;
+  top: 180px;
+  right: 330px;
+  height: 60px;
+}
+
+.cortina-abierta1 {
+  position: absolute;
+  top: 180px;
+  right: 330px;
+  height: 60px;
+  display: none;
+}
+
+.cortina-cerrada2 {
+  position: absolute;
+  top: 240px;
+  right: 150px;
+  height: 60px;
+}
+
+.cortina-abierta2 {
+  position: absolute;
+  top: 240px;
+  right: 150px;
+  height: 60px;
+  display: none;
+}
+
+.cortina-cerrada3 {
+  position: absolute;
+  top: 400px;
+  right: 150px;
+  height: 60px;
+}
+
+.cortina-abierta3 {
+  position: absolute;
+  top: 400px;
+  right: 150px;
+  height: 60px;
+  display: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 23px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .orden {
+    font-size: 20px;
+    padding: 25px;
+    margin: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 23px; /* Ajustar el tamaño de la fuente */
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw; /* Establecer el ancho al 100% del viewport */
+      height: 100vh; /* Establecer la altura al 100% del viewport */
+  }
+
+  .orden {
+      font-size: 20px; /* Ajustar el tamaño de la fuente */
+      padding: 25px;
+      margin: 60px; /* Ajustar el margen */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+}
