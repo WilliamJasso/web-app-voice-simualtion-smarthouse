@@ -31,11 +31,11 @@ function executeActions(ultimaOrden) {
     });
     console.log("Se ha encendido la luz de la sala");
   } else if (ultimaOrden.includes(apagarLuzSala)) {
-    const focosEncendidos = document.querySelectorAll(".foco-encendido");
+    const focosEncendidos = document.querySelectorAll(".foco-encendido-sala1");
     focosEncendidos.forEach(function (foco) {
       foco.style.display = "none"; // Oculta la imagen del foco encendido
     });
-    const focosApagados = document.querySelectorAll(".foco-apagado");
+    const focosApagados = document.querySelectorAll(".foco-apagado-sala1");
     focosApagados.forEach(function (foco) {
       foco.style.display = "block"; // Muestra la imagen del foco apagado
     });
@@ -59,20 +59,20 @@ function executeActions(ultimaOrden) {
     focosEncendidos.forEach(function (foco) {
       foco.style.display = "none"; // Oculta la imagen del foco encendido
     });
-    const focosApagados = document.querySelectorAll(".foco-apagad-comedor");
+    const focosApagados = document.querySelectorAll(".foco-apagado-comedor");
     focosApagados.forEach(function (foco) {
       foco.style.display = "block"; // Muestra la imagen del foco apagado
     });
     console.log("Se ha apagado la luz de la sala");
   } else if (ultimaOrden.includes(encenderLucesJardin)) {
     const focosEncendidos = document.querySelectorAll(
-      ".foco-encendido-patio1, .foco-encendido-patio2, .foco-encendido-patio3"
+      ".foco-encendido-patio1, .foco-encendido-patio2, .foco-encendido-patio3, .foco-encendido-patio4, .foco-encendido-patio5"
     );
     focosEncendidos.forEach(function (foco) {
       foco.style.display = "block"; // Muestra la imagen del foco encendido
     });
     const focosApagados = document.querySelectorAll(
-      ".foco-apagado-patio1, .foco-apagado-patio2, .foco-apagado-patio3"
+      ".foco-apagado-patio1, .foco-apagado-patio2, .foco-apagado-patio3, .foco-apagado-patio4, .foco-apagado-patio5 "
     );
     focosApagados.forEach(function (foco) {
       foco.style.display = "none"; // Oculta la imagen del foco apagado
@@ -80,13 +80,13 @@ function executeActions(ultimaOrden) {
     console.log("Se ha encendido las luces del jardin");
   } else if (ultimaOrden.includes(apagarLucesJardin)) {
     const focosEncendidos = document.querySelectorAll(
-      ".foco-encendido-patio1, .foco-encendido-patio2, .foco-encendido-patio3"
+      ".foco-encendido-patio1, .foco-encendido-patio2, .foco-encendido-patio3, .foco-encendido-patio4, .foco-encendido-patio5"
     );
     focosEncendidos.forEach(function (foco) {
       foco.style.display = "none"; // Muestra la imagen del foco encendido
     });
     const focosApagados = document.querySelectorAll(
-      ".foco-apagado-patio1, .foco-apagado-patio2, .foco-apagado-patio3"
+      ".foco-apagado-patio1, .foco-apagado-patio2, .foco-apagado-patio3, .foco-apagado-patio4, .foco-apagado-patio5 "
     );
     focosApagados.forEach(function (foco) {
       foco.style.display = "block"; // Oculta la imagen del foco apagado
@@ -190,7 +190,7 @@ function obtenerUltimaOrden() {
       if (response.data.length > 0) {
         const ultimaOrden = response.data[response.data.length - 1].order;
         const ultimaFechaHoraOrden =
-          response.data[response.data.length - 1].datetime;
+          response.data[response.data.length - 1].dateTime;
 
         if (ultimaFechaHora !== ultimaFechaHoraOrden) {
           executeActions(ultimaOrden);

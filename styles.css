@@ -84,6 +84,38 @@ body {
 }
 
 
+.foco-apagado-patio4 {
+  position: absolute;
+  bottom: 80px;
+  right: 160px;
+  height: 50px;
+}
+
+.foco-encendido-patio4 {
+  position: absolute;
+  bottom: 80px;
+  right: 160px;
+  height: 50px;
+  display: none;
+}
+
+.foco-apagado-patio5 {
+  position: absolute;
+  top: 150px;
+  right: 140px;
+  height: 50px;
+}
+
+.foco-encendido-patio5 {
+  position: absolute;
+  top: 150px;
+  right: 140px;
+  height: 50px;
+  display: none;
+}
+
+
+
 .foco-apagado-comedor {
   position: absolute;
   top: 250px;
