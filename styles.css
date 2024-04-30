@@ -261,8 +261,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+  
   }
 
   .title {
@@ -277,6 +276,7 @@ body {
     position: relative; /* Agregamos posicionamiento relativo al contenedor */
     width:fit-content;
     justify-content: center;
+    margin: 5px;
   }
 
   .orden {
