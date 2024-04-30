@@ -283,13 +283,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    margin: 5px;
   }
 
   .orden {
     font-size: 20px;
     padding: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
