@@ -256,11 +256,15 @@ body {
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 23px;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #e7e5e5;
+  font-size: calc(10px + 2vmin);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   
   }
 
@@ -274,9 +278,12 @@ body {
 
   .plano {
     position: relative; /* Agregamos posicionamiento relativo al contenedor */
-    width:100vh;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 5px;
+   
   }
 
   .orden {
