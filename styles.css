@@ -276,24 +276,3 @@ body {
 }
 
 
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-  body {
-      font-size: 23px; /* Ajustar el tamaño de la fuente */
-      display: flex; 
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100vw; /* Establecer el ancho al 100% del viewport */
-      height: 100vh; /* Establecer la altura al 100% del viewport */
-  }
-
-  .orden {
-      font-size: 20px; /* Ajustar el tamaño de la fuente */
-      padding: 25px;
-      margin: 60px; /* Ajustar el margen */
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
-}
