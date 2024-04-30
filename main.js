@@ -19,6 +19,9 @@ function executeActions(ultimaOrden) {
   const abrirCortinas = "abre las cortinas";
   const cerrarCortinas = "cierra las cortinas";
 
+  const encenderAlarma = "enciende la alarma";
+  const apagarAlarma = " la alarma";
+
   let mostrarOrden = ultimaOrden;
   if (ultimaOrden.includes(encenderLuzSala)) {
     const focosEncendidos = document.querySelectorAll(".foco-encendido-sala1");

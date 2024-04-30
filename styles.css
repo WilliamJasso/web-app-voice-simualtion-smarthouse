@@ -253,6 +253,13 @@ body {
   display: none;
 }
 
+.alarma{
+  position: absolute;
+  bottom: 55px;
+  left: 150px;
+  height: 40px;
+}
+
 /* Estilos para dispositivos móviles 
 @media only screen and (max-width: 600px) {
   body {
