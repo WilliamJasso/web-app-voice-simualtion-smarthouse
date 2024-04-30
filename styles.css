@@ -265,6 +265,20 @@ body {
     height: 100vh;
   }
 
+  .title {
+   
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .plano {
+    position: relative; /* Agregamos posicionamiento relativo al contenedor */
+    width:fit-content;
+    justify-content: center;
+  }
+
   .orden {
     font-size: 20px;
     padding: 25px;
