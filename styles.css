@@ -274,7 +274,7 @@ body {
 
   .plano {
     position: relative; /* Agregamos posicionamiento relativo al contenedor */
-    width:fit-content;
+    width:100vh;
     justify-content: center;
     margin: 5px;
   }
