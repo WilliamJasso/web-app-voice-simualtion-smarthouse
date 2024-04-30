@@ -278,7 +278,7 @@ body {
 
   .plano {
     position: relative; /* Agregamos posicionamiento relativo al contenedor */
-    max-width: 90%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -289,7 +289,7 @@ body {
   .orden {
     font-size: 20px;
     padding: 25px;
-    margin: 60px;
+    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
