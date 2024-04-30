@@ -253,7 +253,7 @@ body {
   display: none;
 }
 
-/* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles 
 @media only screen and (max-width: 600px) {
   body {
     font-size: 23px;
@@ -273,7 +273,7 @@ body {
   }
 
   .plano {
-    position: relative; /* Agregamos posicionamiento relativo al contenedor */
+    position: relative; 
     max-width: 100vh;
     height: 100%;
     display: flex;
@@ -290,6 +290,5 @@ body {
     justify-content: center;
     text-align: center;
   }
+  
 }
-
-
